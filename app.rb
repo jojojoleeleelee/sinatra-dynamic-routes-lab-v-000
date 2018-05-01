@@ -13,13 +13,12 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    binding.pry
+    # binding.pry
     @repeat = params[:number].to_i
     @repeated = []
     @repeat.times do
         @repeated << params[:phrase]
     end
-
     "#{@repeated.join(" ")}."
   end
 
