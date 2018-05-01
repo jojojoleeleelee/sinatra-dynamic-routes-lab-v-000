@@ -13,7 +13,8 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    @repeated = (params[:phrase].join(" ") * params[:number].to_i)
+    @repeated = params[:number].to_i.times do |p|
+      print params[:phrase]
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
