@@ -39,5 +39,6 @@ class App < Sinatra::Base
     else
       final = "what the..."
     end
+    final.to_s
   end
 end
