@@ -36,6 +36,8 @@ class App < Sinatra::Base
       final = params[:number1].to_i * params[:number2].to_i
     elsif params[:operation] = 'divide'
       final = params[:number1].to_i / params[:number2].to_i
+    else
+      final = "what the..."
     end
   end
 end
