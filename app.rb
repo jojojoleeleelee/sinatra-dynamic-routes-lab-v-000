@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @repeated = params[:number].to_i.times do
       print "#{params[:phrase]} "
     end
-    "#{@repeated}"
+    "#{@repeated}."
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
