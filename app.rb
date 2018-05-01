@@ -13,8 +13,9 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    @repeated = params[:number].to_i.times do |p|
-      print params[:phrase]
+    @repeated = params[:number].to_i.times do
+      print "#{params[:phrase]} "
+    end
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
