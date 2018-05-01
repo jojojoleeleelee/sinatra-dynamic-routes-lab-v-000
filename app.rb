@@ -32,5 +32,8 @@ class App < Sinatra::Base
     when 'subtract'
       params[:number1].to_i - params[:number2].to_i
     when 'multiply'
+      params[:number1].to_i * params[:number2].to_i
+    when 'divide'
+
   end
 end
