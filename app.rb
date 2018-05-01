@@ -12,7 +12,7 @@ class App < Sinatra::Base
     "#{@square}"
   end
 
-  get '/say/:word1/:word2/:word3/:word4/:word5' do
+  get '/say/:number/:phrase' do
     binding.pry
   end
   
