@@ -28,10 +28,9 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    case params[:operation]
-    when 'add'
+    if params[:operation] = 'add'
       params[:number1].to_i + params[:number2].to_i
-    when 'subtract'
+    elsif params[:operation] = 'subtract'
       params[:number1].to_i - params[:number2].to_i
     when 'multiply'
       params[:number1].to_i * params[:number2].to_i
