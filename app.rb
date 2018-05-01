@@ -19,6 +19,7 @@ class App < Sinatra::Base
     @repeat.times do
         @repeated << params[:phrase]
     end
+    @repeated.join(" ")
     "#{@repeated}."
   end
 
